@@ -1,0 +1,43 @@
+augmenter:
+  dropout:
+  - 0.1
+  - 0.1
+  name: dropout
+  num_samples: 2
+data:
+  batch_size: 32
+  config: none
+  gradient_accu_step: 1
+  include_oos: false
+  label_column: label_name
+  name: cardiffnlp/tweet_topic_single
+  validation: true
+early_stopping:
+  delta: 0
+  tolerance: 5
+model:
+  L2_normalize_encoded_feature: true
+  L2_normalize_logits: true
+  contrastive:
+    base_temperature: 0.3
+    contrast_mode: all
+    contrastive_loss_ratio: 0.9
+    temperature: 0.1
+  dropout_rate: 0.5
+  epochs: 100
+  freeze_transformer_layers: none
+  from_pretrained: roberta-base
+  layers:
+    layer1:
+      n_in: 768
+      n_out: 20
+  learning_rate: 1.0e-05
+  num_transformer_layers: full
+  output_path: ./outputs/tweet_topic_single/experiments/cohort4/09/01/
+name: tweet_topic_single_cohort_4_roberta
+seed:
+- 0
+- 1
+- 2
+visualizer:
+- tsne

@@ -1,0 +1,20 @@
+name: "1"
+seed: 42
+model:
+  from_pretrained: "bert-base-cased"
+  layers:
+    layer1:
+      n_in: 768
+      n_out: 20
+  num_transformer_layers: 2
+  freeze_transformer_layers: "none"
+  learning_rate: 0.001
+  dropout_rate: 0.1
+  epochs: 10
+  output_path: "./outputs/"
+
+data:
+  name: "./sequence_classifier/custom_datasets/TRECIS.py"
+  batch_size: 32
+  label_column: "label"
+
