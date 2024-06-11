@@ -1,4 +1,4 @@
-# Small Lab-Scale Supervised Contrastive Learning for Microblog Classification on One GPU
+# Revisiting Supervised Contrastive Learning for Microblog Classification
 ## Requirement
 - python>=3.7.*
 - torch>=1.10.0
