@@ -8,7 +8,7 @@ from time import sleep
 import torch
 from omegaconf import DictConfig, ListConfig
 
-from sequence_classifier.engines.trainer import MetaLearningTrainer, BatchLearningTrainer
+from sequence_classifier.engines.trainer import BatchLearningTrainer
 from sequence_classifier.parsers.parser import parse
 from utils import instantiate_config, get_hyperparameters, config_generator
 
