@@ -15,8 +15,8 @@ pip install -r requirements.txt
 
 
 ## Overview
-This repository contains source code for the paper submitted to ACl 2023 - Small Lab-Scale 
-Supervised Contrastive Learning for Microblog Classification on One GPU - under Apache 2.0 License.
+This repository contains source code for the paper submitted to EMNLP 2024 - Revisiting 
+Supervised Contrastive Learning for Microblog Classification - under Apache 2.0 License.
 
 ### How to write a configuration file?
 The configuration file is utilized by hydra with a .yaml file. To set up a configuration, one can refer to one of the example 
